@@ -430,7 +430,6 @@ public final class HighActivity extends Activity implements OnFullscreenListener
         }
 
     }
-
     private static final class VideoEntry {
         private final String text;
         private final String videoId;

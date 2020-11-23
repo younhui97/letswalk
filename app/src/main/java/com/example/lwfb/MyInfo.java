@@ -201,18 +201,6 @@ public class MyInfo extends AppCompatActivity {
 
         ArrayList NoOfEmp = new ArrayList();
 
-        //Log.e("int 값 프린트 ", String.valueOf(PedoActivity.cntlist.get(0)));
-        //Log.e("long 값 프린트 ", String.valueOf(Long.valueOf(PedoActivity.cntlist.get(0))));
-//        NoOfEmp.add(new BarEntry((Long.valueOf(PedoActivity.cntlist.get(0))), 0));
-//        NoOfEmp.add(new BarEntry((Long.valueOf(PedoActivity.cntlist.get(1))), 1));
-//        NoOfEmp.add(new BarEntry((Long.valueOf(PedoActivity.cntlist.get(2))), 2));
-//        NoOfEmp.add(new BarEntry((Long.valueOf(PedoActivity.cntlist.get(3))), 3));
-//        NoOfEmp.add(new BarEntry((Long.valueOf(PedoActivity.cntlist.get(4))), 4));
-//        NoOfEmp.add(new BarEntry((Long.valueOf(PedoActivity.cntlist.get(5))), 5));
-//        NoOfEmp.add(new BarEntry((Long.valueOf(PedoActivity.cntlist.get(6))), 6));
-
-
-
         //String s = String.valueOf(PedoActivity.cntlist.get(1));
         averagestep.setText("" +(Long.parseLong(String.valueOf(PedoActivity.cntlist.get(0)))+Long.parseLong(String.valueOf(PedoActivity.cntlist.get(1)))+Long.parseLong(String.valueOf(PedoActivity.cntlist.get(2)))
                 +Long.parseLong(String.valueOf(PedoActivity.cntlist.get(3)))+Long.parseLong(String.valueOf(PedoActivity.cntlist.get(4)))+Long.parseLong(String.valueOf(PedoActivity.cntlist.get(5)))
@@ -234,9 +222,6 @@ public class MyInfo extends AppCompatActivity {
         SimpleDateFormat yearFormat = new SimpleDateFormat("yyyy", Locale.getDefault());
 
         String weekDay = weekdayFormat.format(currentTime);
-//        String year = yearFormat.format(currentTime);
-//        String month = monthFormat.format(currentTime);
-//        String day = dayFormat.format(currentTime);
         if (PedoActivity.index==0){
             NoOfEmp.add(new BarEntry(Integer.parseInt(String.valueOf(PedoActivity.cntlist.get(1))), 0));
             NoOfEmp.add(new BarEntry(Integer.parseInt(String.valueOf(PedoActivity.cntlist.get(2))), 1));
